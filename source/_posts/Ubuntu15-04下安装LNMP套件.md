@@ -63,7 +63,7 @@ tags: [LNMP, php]
 
         ## With php5-fpm:
 
-        fastcgi_pass unix:/var/run/php5-fpm.sock;
+        fastcgi_pass unix:/var/run/php5-fpm.sock;    # 此处有可能因为版本原因，路径不一，可能为/var/run/php/php5.6-fpm.pid。
 
         include fastcgi_params;
     }
